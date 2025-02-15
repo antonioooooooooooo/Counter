@@ -1,41 +1,22 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import Counter from "./components/Counter.vue";
 </script>
 
 <template>
   <main>
-    Hello World
+    <img
+      class="lana"
+      src="https://best-fit.transforms.svdcdn.com/production/images/lana_del_rey_high_by_the_beach.jpg?w=1200&h=1200&q=100&auto=format&fit=crop&dm=1642917344&s=64fd54619add3ce3fcf2a48111036402"
+    />
+    <Counter />
   </main>
 </template>
 
 <style scoped>
-
-header {
-  line-height: 1.5;
+.lana {
+  width: 300px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  border: 1px solid black;
 }
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-
 </style>
